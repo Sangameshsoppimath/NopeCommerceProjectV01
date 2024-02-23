@@ -12,7 +12,7 @@ public class Register extends Base
 	@Test(priority=1,dataProvider="Register data")
 	public void register(String Fname,String Lname,String day,String Month,String year,String email,String companyname,String password,String confirmpass) throws InterruptedException
 	{
-		test=extent.createTest("Register","Registered Successfully");
+		test=extent.createTest("Register","Registered Successfully Test");
 		
 		RegisterPage rp=new RegisterPage(driver);
 		rp.clickmaiRegister();
